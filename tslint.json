@@ -14,6 +14,13 @@
   "rules": {
     "ordered-imports": false,
     "no-namespace": false,
-    "no-empty-interface": false
+    "no-empty-interface": false,
+    "interface-over-type-literal": false,
+    "no-shadow": false,
+    "strict-boolean-expressions": false,
+    "object-literal-sort-keys": false,
+    "jsx-boolean-value": [
+      "never"
+    ]
   }
 }
