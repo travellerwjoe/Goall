@@ -4,18 +4,18 @@ import Typography from '@material-ui/core/Typography'
 import Toolbar from '@material-ui/core/Toolbar'
 
 export interface IHeader {
+	className?: string
 }
 
-export default class Header extends React.Component<IHeader, any> {
-    public render() {
-        return (
-            <AppBar position="sticky" >
-                <Toolbar>
-                    <Typography variant="title" color="inherit">
-                        Goall
-                    </Typography>
-                </Toolbar>
-            </AppBar>
-        );
-    }
-}
+
+const Header: React.SFC<IHeader> = ({ className }) => (
+	<AppBar position="absolute" className={className} >
+		<Toolbar>
+			<Typography variant="title" color="inherit">
+				Goall
+      </Typography>
+		</Toolbar>
+	</AppBar>
+)
+
+export default Header
