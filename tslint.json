@@ -19,6 +19,7 @@
     "no-shadow": false,
     "strict-boolean-expressions": false,
     "object-literal-sort-keys": false,
+    "no-debugger": false,
     "jsx-boolean-value": [
       "never"
     ]
