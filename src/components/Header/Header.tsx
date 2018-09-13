@@ -9,7 +9,7 @@ export interface IHeader {
 
 
 const Header: React.SFC<IHeader> = ({ className }) => (
-	<AppBar position="absolute" className={className} >
+	<AppBar position="fixed" className={className} >
 		<Toolbar>
 			<Typography variant="title" color="inherit">
 				Goall
